@@ -1,0 +1,244 @@
+@import url('http://fonts.googleapis.com/css2?family=cairo:wght@200..1000&display=swap');
+
+
+:root{
+  --dark: #343a40;
+  --yellow-color:rgba(228, 144, 16, 0.867);
+  --main-color:#8000ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Navbar */
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-item .nav-link{
+  color: #000;
+  transition: .3s ease;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color: #fff;                                  
+  background-color:#007bff;
+}
+.navbar-brand{
+  font-size: 30px;
+  padding-left: 50px                                            ;
+  text-align: right;
+  color: #007bff;
+}
+.nav-link:hover,
+.btn1 li a:hover{
+  color: #fff;
+  background-color:#007bff;
+  border-radius: 10px;
+}
+.dropdown-menu li a:hover{
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 10px;
+}
+.nav-item li a,
+.navbar-nav .nav-item .nav-link,
+.btn1{
+  text-decoration: none;
+  padding: 5px 20px;
+  font-weight: 500;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
+  text-align: right;
+}
+.icons{
+  padding-left: 100px;
+  list-style: none;
+}
+.icons i{
+  color: black;
+  font-size: 25px;
+  display: inline-block;
+  transition: .3s;
+  margin: 10px;
+}
+.icons i:hover{
+  color: #ff8000;
+}
+/* End Navbar */
+
+/* Start landing */
+.landing{
+  height: 300px;
+  background-color:#007bff ;
+  position: relative;
+}
+
+.introduction-text{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  text-align: right;
+  z-index: 2;
+}
+.introduction-text h2 span{
+  font-size: 2rem;
+  margin: 0 0 12px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.introduction-text h4{
+  font-size: 25px;
+}
+.culture li{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.introduction-text li a{
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color:#fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* End landing */
+
+/* Start cards */
+.card{
+  border-radius: 10px;
+  margin: 20px;
+  transition: .3s ease;
+  border: 1px solid #7b7b7b;
+}
+.card-img-top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 200px;
+}
+.card:hover{
+  box-shadow: 10px 10px 10px #DDD;
+  transform: scale(1,);
+}
+/* End cards */
+.line{
+  position: absolute;
+  height: 1px;
+  background-color: #7b7b7b;
+  width: 25%;
+  left: 37%;
+}
+/* Start slide */
+.slide{
+  height: 100vh;
+  width: 100%;
+}
+/* End slide */
+/* Start Footer */
+footer{
+  background-color: #343434;
+  padding-top: 50px;
+}
+footer .container{
+  display: flex;
+  width: 1140px;
+  margin: auto;
+  justify-content: center;
+  color:#fff;
+  font-weight: bold;
+  
+}
+.footer-content{
+  width: 33.3%;
+}
+footer .container .footer-content h3{
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+}
+.footer-content ul{
+  text-align: center;
+  padding:0;
+}
+.footer-content ul li{
+  width: auto;
+  text-align: center;
+  list-style: none;
+  padding: 7px;
+  position: relative;
+}
+.footer-content ul li::before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width:0;
+  height:2px;
+  background-color: #f18930;
+  transition-duration: .5s;
+}
+.footer-content ul li:hover::before{
+  width: 70px;
+} 
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.footer-content li{
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+
+}
+.social-icons i{
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+}
+.footer-content a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: bold;
+}
+.footer-content a:hover{
+  color: #ff8000;
+  text-decoration: none;
+}
+.social-icons i:hover{
+  color: #f18930;
+}
+
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.bottom-bar{
+  background-color: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.bottom-bar p{
+  color: #343434;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+  font-weight: bold;
+}
+/* End Footer */
